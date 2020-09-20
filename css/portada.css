@@ -1,0 +1,38 @@
+.portada {
+  background-color: #000000;
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.portada video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.portada .container {
+  position: relative;
+  z-index: 2;
+}
+
+.portada .portada__musica {
+  opacity: 0.5;
+  z-index: 3;
+}
+
+.portada .portada__musica:hover {
+  opacity: 1;
+}
