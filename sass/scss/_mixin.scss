@@ -1,0 +1,10 @@
+/* opacidad internet explorer */
+
+@mixin opacity($opacity)  {
+	opacity: $opacity;
+	$opacity-ie: $opacity * 100;
+	filter: alpha(opacity=$opacity-ie);
+}
+
+.transparencia {
+@include opacity(0.9)}

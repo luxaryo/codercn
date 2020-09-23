@@ -1,0 +1,16 @@
+footer {
+  font-size: 0.6rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: $gris;
+
+ .rrss {
+  padding: 10px;
+  font-size: 2rem;
+  letter-spacing: 30px;
+  @media (max-width: 576px) {
+    font-size: 1.8rem;
+    letter-spacing: 10px;
+  }
+}
+}

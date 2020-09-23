@@ -1,0 +1,21 @@
+.ultimo {
+  background: $gris;
+  margin: 50px 0px;
+
+	p {
+  		padding: 15px;
+  		color: #ffffff;
+  		text-align: center;
+	}
+
+	strong,
+	a {
+  		color: $suave;
+  		text-decoration: none;
+	}
+
+	a:hover {
+  		color: $fuerte;
+  		text-decoration: none;
+	}
+}
