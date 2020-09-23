@@ -6,6 +6,10 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1"
 		/>
+
+		<meta name="description" content="Club Nautico es una banda musical integrada por Vito y Kevin">
+
+<meta name="keywords" content="Club Nautico, Club Nautico + Rada Tilly + Musica, Club Nautico + Comodoro Rivadavia + Musica, Club Nautico + Banda, Club Nautico + Grupo, Vito, Kevin,Club Nautico + Musica">
 		<title>Club Nautico</title>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Poppins&display=swap"
@@ -27,7 +31,7 @@
 				muted="muted"
 				loop="loop"
 			>
-				<source src="img/portada.mp4" type="video/mp4" />
+				<source src="img/portada.mp4" type="video/mp4" alt="Video Portada"/>
 			</video>
 			<div class="container h-100">
 				<div
@@ -50,23 +54,9 @@
 				</div>
 			</div>
 		</header>
-<!---			<nav>
-		<div class="container-fluid menu d-none d-md-block mx-auto">
+	<nav>
+			<div class="menu">
 				<ul>
-					<li><a data-scroll href="#inicio">Inicio</a></li>
-					<li><a data-scroll href="#media">Media</a></li>
-					<li><a data-scroll href="#fechas">Fechas</a></li>
-					<li><a data-scroll href="#contacto">Contacto</a></li>
-				</ul>
-			</div>
-		</nav> !--->
-		<nav class="navbar navbar-expand-sm fixed-top">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
- <div class="navbar-collapse collapse" id="menu">
-						<ul class="navbar-nav nav-justified">
 					<li><a data-scroll href="#inicio">Inicio</a></li>
 					<li><a data-scroll href="#media">Media</a></li>
 					<li><a data-scroll href="#fechas">Fechas</a></li>
@@ -115,7 +105,7 @@
 				<div class="col-md-12 col-lg-6">
 					<img
 						src="img/sesshomaru-cara.gif"
-						class="d-none d-md-block mx-auto"
+						class="d-none d-md-block mx-auto" alt="Gif Anime"
 					/>
 				</div>
 			</div>
@@ -131,84 +121,65 @@
 			</p>
 		</div>
 
-		<!--- las imagenes van a ser todas del mismo tamaño, pero no tengo photoshop como para poder hacerlo. 
-además esta es la primer etapa de lo que finalmente quiero lograr, que es integrarle spotify y las letras en 2 div sobre las fotos blureadas, que se descubririan con el hover 
-		<section id="media" class="container-fluid media">
-			<div class="row">
-				<div class="col-md-10 col-lg-12">
-			<div
-				id="carouselExampleIndicators"
-				class="carousel slide"
-				data-ride="carousel"
-			>
-				<ol class="carousel-indicators">
-					<li
-						data-target="#carouselExampleIndicators"
-						data-slide-to="0"
-						class="active"
-					></li>
-					<li
-						data-target="#carouselExampleIndicators"
-						data-slide-to="1"
-					></li>
-					<li
-						data-target="#carouselExampleIndicators"
-						data-slide-to="2"
-					></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img
-							class="d-block w-100 img-fluid"
-							src="img/fotos/vit1.jpg"
-							alt="First slide"
-						/>
-					</div>
-					<div class="carousel-item">
-						<img
-							class="d-block w-100 img-fluid"
-							src="img/fotos/vit2.jpg"
-							alt="Second slide"
-						/>
-					</div>
-					<div class="carousel-item">
-						<img
-							class="d-block w-100 img-fluid"
-							src="img/fotos/vit3.jpg"
-							alt="Third slide"
-						/>
-					</div>
-				</div>
-				<a
-					class="carousel-control-prev"
-					href="#carouselExampleIndicators"
-					role="button"
-					data-slide="prev"
-				>
-					<span
-						class="carousel-control-prev-icon"
-						aria-hidden="true"
-					></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a
-					class="carousel-control-next"
-					href="#carouselExampleIndicators"
-					role="button"
-					data-slide="next"
-				>
-					<span
-						class="carousel-control-next-icon"
-						aria-hidden="true"
-					></span>
-					<span class="sr-only">Next</span>
-				</a>
+		<section id="media">
+			<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/fotos/cn1.jpg" class="media__img" alt="Fotografía Integrantes"> 
+    </div>
+    <div class="carousel-item">
+      <img src="img/fotos/cn2.jpg" class="media__img" alt="Fotografía Integrantes">
+    </div>
+    <div class="carousel-item">
+      <img src="img/fotos/cn3.jpg" class="media__img" alt="Fotografía Vocalista">
 
-			</div>
-			</div>
-			</div>
+    <!---  Mi idea es que el carrusel contenga la imagen como fondo y encima el reproductor de spotify con las letras, que a través del hover desaparezcan para dejar ver las imagenes. Solo para tamaños +LG 
+      <div class="row container media__lyrics">
+     	<div class="col-lg-6 d-none d-md-block mx-auto"> <iframe src="https://open.spotify.com/embed/track/4tuehhpW9q3gxoIev6Rdo5" allowtransparency="true" allow="encrypted-media"></iframe> </div>
+      	<div class="col-lg-6 d-none d-md-block mx-auto"> 
+       <p>	no es la primera vez que veo caminar <br>
+      	 tus pies entre la arena <br>
+      	 voy a despertar, <br>
+      	 correr hacia el mar <br>
+      	 y tal vez pueda cruzarte </p>
+<p>
+      	 solo para comenzar <br>
+      	 contame cuál es el plan <br>
+      	 que tenés para esta tarde <br>
+      	 canciones de ultramar <br>
+      	 nos sentaríamos a escuchar <br>
+      	 entre los dos
+</p>
+
+<p>
+	bajo este enigma casual <br>
+	tan poco habitual <br>
+	se conmueven nuestras almas <br>
+</p>
+
+<p>
+	voy a despertar <br>
+	y me voy a inclinar <br>
+	ante el fuego, su elemento
+</p>
+      	</div>
+      </div>  
+    </div> -->
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
 		</section>
--->
+
 		<section
 			class="fechas wow animate__animated animate__fadeInUp"
 			id="fechas"
@@ -286,7 +257,7 @@ además esta es la primer etapa de lo que finalmente quiero lograr, que es integ
 						class="embed-responsive-item"
 						src="https://www.youtube.com/embed/5pq6Vd0Ul1E"
 						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
+						allowfullscreen alt="Video Canción XVIII"
 					></iframe>
 				</div>
 
@@ -320,20 +291,20 @@ además esta es la primer etapa de lo que finalmente quiero lograr, que es integ
 		<footer class="container-fluid">
 			<div class="rrss">
 				<i
-					class="fab fa-facebook-square"
+					class="fab fa-facebook-square" alt="Ícono Facebook"
 					style="color: RoyalBlue"
 				></i>
 
 				<a href="https://www.instagram.com/clvbnautico/">
 					<i
-						class="fab fa-instagram"
+						class="fab fa-instagram" alt="Ícono Instragram"
 						style="color: MediumPurple"
 					></i>
 				</a>
 				<a href="https://twitter.com/clvbnautico">
 					<i
-						class="fab fa-twitter"
-						style="color: SteelBlue"
+						class="fab fa-twitter" 
+						style="color: SteelBlue" alt="Ícono Twitter"
 					></i>
 				</a>
 				<a
@@ -341,7 +312,7 @@ además esta es la primer etapa de lo que finalmente quiero lograr, que es integ
 				>
 					<i
 						class="fab fa-spotify"
-						style="color: MediumSeaGreen"
+						style="color: MediumSeaGreen" alt="Ícono Spotify"
 					></i>
 				</a>
 				<a
@@ -349,7 +320,7 @@ además esta es la primer etapa de lo que finalmente quiero lograr, que es integ
 				>
 					<i
 						class="fab fa-youtube"
-						style="color: FireBrick"
+						style="color: FireBrick" alt="Ícono Youtube"
 					></i>
 				</a>
 			</div>
