@@ -3,4 +3,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  img:hover{
+    transform: scaleX(-1);
+    filter: invert(100%);
   }
+}
+
