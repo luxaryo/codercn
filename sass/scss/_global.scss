@@ -51,6 +51,10 @@ h1 {
 	@media (max-width: 576px) {
 		font-size: 3rem;
 	}
+
+	&:hover {
+		filter: invert(100%);
+	}
 }
 
 h2 {

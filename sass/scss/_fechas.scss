@@ -12,52 +12,50 @@
     height: auto;
   }
 
-.fechas__head {
-  font-size: 1.8rem;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-align: center;
-  color: $suave;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  border-bottom: 1px solid #ffffff;
-}
-
-.fechas__contenido {
-  text-align: center;
-  padding: 20px;
-}
-
-.fechas__ayuda {
-  text-align: justify;
-  font-size: 0.8rem;
-  padding: 0px 20px;
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-
-.fechas__head {
+  .fechas__head {
     font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $suave;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-bottom: 1px solid #ffffff;
   }
 
-.fechas strong {
-  color: $suave;
-}
+  .fechas__contenido {
+    text-align: center;
+    padding: 20px;
+  }
 
-em {
-  color: $fuerte;
-}
+  .fechas__ayuda {
+    text-align: justify;
+    font-size: 0.8rem;
+    padding: 0px 20px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
 
-input[type="button"] {
-  width: 90%;
-  text-transform: uppercase;
-  background-color: $suave;
-  color: $gris;
-  margin: 2px;
-  font-size: 0.92rem;
-  word-spacing: 5px;
-  font-weight: 600;
-}
+  .fechas strong {
+    color: $suave;
+  }
+
+  input[type="button"] {
+    width: 90%;
+    text-transform: uppercase;
+    background-color: $suave;
+    color: $gris;
+    margin: 2px;
+    border: 1px #000 solid;
+    font-size: 0.92rem;
+    word-spacing: 5px;
+    font-weight: 600;
+
+    &:hover {
+      letter-spacing: 2px;
+      filter: invert(100%);
+    }
+  }
 }
 

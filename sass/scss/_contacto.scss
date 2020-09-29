@@ -5,44 +5,44 @@
   justify-content: center;
   text-align: justify;
 
-input {
-  background-color: $gris;
-  color: #a4a4a4;
-  padding: 3px;
-  border: 1px solid #000;
-}
+  input {
+    background-color: $gris;
+    color: #a4a4a4;
+    padding: 3px;
+    border: 1px solid #000;
+  }
 
-input[type="text"] {
-  width: 100%;
-}
-input[type="button"],
-input[type="submit"],
-input[type="reset"] {
-  width: 30%;
-  display: inline;
-}
+    input[type="text"] {
+      width: 100%; 
+    }
 
-input[type="button"]:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover {
-  background-color: #666666;
-}
+    input[type="button"],
+    input[type="submit"],
+    input[type="reset"] {
+      width: 30%;
+      display: inline;
+    }
 
-textarea {
-  margin: 15px 0px;
-  height: 35px;
-  padding: 5px;
-  width: 100%;
-  background-color: $gris;
-  color: #a4a4a4;
-  border: 1px solid #000;
-  transition: 2s;
-  border-radius: 0%;
-  overflow: hidden;
+    input[type="button"]:hover,
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        filter: invert(100%);
+    }
 
-textarea:hover {
-  height: 150px;
-} 
-}
+  textarea {
+    margin: 15px 0px;
+    height: 35px;
+    padding: 5px;
+    width: 100%;
+    background-color: $gris;
+    color: #a4a4a4;
+    border: 1px solid #000;
+    transition: 2s;
+    border-radius: 0%;
+    overflow: hidden;
 
+    &:hover {
+      height: 150px;
+    } 
+  }
 }

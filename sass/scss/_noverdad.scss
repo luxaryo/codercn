@@ -14,8 +14,8 @@
   		text-decoration: none;
 	}
 
-	a:hover {
-  		color: $fuerte;
+	strong:hover, a:hover {
+      filter: invert(100%);
   		text-decoration: none;
 	}
 }

@@ -9,18 +9,17 @@
 
 		<meta name="description" content="Club Nautico es una banda musical integrada por Vito y Kevin">
 
-<meta name="keywords" content="Club Nautico, Club Nautico + Rada Tilly + Musica, Club Nautico + Comodoro Rivadavia + Musica, Club Nautico + Banda, Club Nautico + Grupo, Vito, Kevin,Club Nautico + Musica">
+		<meta name="keywords" content="Club Nautico, Club Nautico + Rada Tilly + Musica, Club Nautico + comodoro Rivadavia + Musica, Club Nautico + Banda, Club Nautico + Grupo, Vito, Kevin,Club Nautico + Musica">
 		<title>Club Nautico</title>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Poppins&display=swap"
-			rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Poppins&display=swap" rel="stylesheet"/>
 		<link rel="stylesheet" href="css/animate.css" />
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/fontawesome.css" />
 		<link rel="stylesheet" href="css/brands.css" />
 		<link rel="stylesheet" href="css/solid.css" />
 		<link rel="stylesheet" href="sass/css/main.css" />
+		<!-- Esto claramente no funciona pero se supone que debería hacer funcionar el audio de la parte de media 
+		<link rel="stylesheet" href="sass/js/musica.js" /> -->
 	</head>
 
 	<body>
@@ -41,7 +40,7 @@
 						<h1>Club Nautico</h1>
 						<div class="portada__musica">
 							<audio
-								src="music/ex.ogg"
+								src="music/nslqe.mp3"
 								preload="auto"
 								controls
 							>
@@ -54,7 +53,8 @@
 				</div>
 			</div>
 		</header>
-	<nav>
+		
+		<nav>
 			<div class="menu">
 				<ul>
 					<li><a data-scroll href="#inicio">Inicio</a></li>
@@ -70,6 +70,7 @@
 		<script>
 			new WOW().init();
 		</script>
+
 		<section class="intro container" id="inicio">
 			<div class="row">
 				<div class="col-md-12 col-lg-6">
@@ -85,12 +86,10 @@
 						vestibulum malesuada sapien, et gravida
 						velit euismod ac. Praesent sit amet rutrum
 						purus.
-						<strong
-							>Nam egestas, enim ut consectetur
+						<strong>Nam egestas, enim ut consectetur
 							eleifend, dui massa tempus felis, id
 							venenatis lorem arcu vitae
-							lectus</strong
-						>. Duis justo orci, blandit a turpis at,
+							lectus</strong>. Duis justo orci, blandit a turpis at,
 						interdum volutpat urna. Quisque eu quam
 						fringilla, congue libero eu, vehicula
 						ligula. Integer imperdiet faucibus urna ac
@@ -104,7 +103,7 @@
 
 				<div class="col-md-12 col-lg-6">
 					<img
-						src="img/sesshomaru-cara.gif"
+						src="img/sesshomaru.jpg"
 						class="d-none d-md-block mx-auto" alt="Gif Anime"
 					/>
 				</div>
@@ -121,63 +120,34 @@
 			</p>
 		</div>
 
-		<section id="media">
+		<section id="media" class="container wow animate_animated animate__fadeIn">
 			<div id="demo" class="carousel slide" data-ride="carousel">
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/fotos/cn1.jpg" class="media__img" alt="Fotografía Integrantes"> 
-    </div>
-    <div class="carousel-item">
-      <img src="img/fotos/cn2.jpg" class="media__img" alt="Fotografía Integrantes">
-    </div>
-    <div class="carousel-item">
-      <img src="img/fotos/cn3.jpg" class="media__img" alt="Fotografía Vocalista">
-
-    <!---  Mi idea es que el carrusel contenga la imagen como fondo y encima el reproductor de spotify con las letras, que a través del hover desaparezcan para dejar ver las imagenes. Solo para tamaños +LG 
-      <div class="row container media__lyrics">
-     	<div class="col-lg-6 d-none d-md-block mx-auto"> <iframe src="https://open.spotify.com/embed/track/4tuehhpW9q3gxoIev6Rdo5" allowtransparency="true" allow="encrypted-media"></iframe> </div>
-      	<div class="col-lg-6 d-none d-md-block mx-auto"> 
-       <p>	no es la primera vez que veo caminar <br>
-      	 tus pies entre la arena <br>
-      	 voy a despertar, <br>
-      	 correr hacia el mar <br>
-      	 y tal vez pueda cruzarte </p>
-<p>
-      	 solo para comenzar <br>
-      	 contame cuál es el plan <br>
-      	 que tenés para esta tarde <br>
-      	 canciones de ultramar <br>
-      	 nos sentaríamos a escuchar <br>
-      	 entre los dos
-</p>
-
-<p>
-	bajo este enigma casual <br>
-	tan poco habitual <br>
-	se conmueven nuestras almas <br>
-</p>
-
-<p>
-	voy a despertar <br>
-	y me voy a inclinar <br>
-	ante el fuego, su elemento
-</p>
-      	</div>
-      </div>  
-    </div> -->
-  </div>
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
+  				<ul class="carousel-indicators">
+    				<li data-target="#demo" data-slide-to="0" class="active"></li>
+    				<li data-target="#demo" data-slide-to="1"></li>
+    				<li data-target="#demo" data-slide-to="2"></li>
+  				</ul>
+  				<div class="carousel-inner">
+   					 <div class="carousel-item active">
+      						<img src="img/fotos/nslqe.jpg" class="img-fluid media__img" alt="Ilustración estilo anime"> 
+     						 <!--<audio src="music/nslqe.mp3" preload="auto"></audio> -->
+    				</div>
+    				<div class="carousel-item">
+    					<img src="img/fotos/lapso.jpg" class="img-fluid media__img" alt="Fotografía en blanco y negro">
+   						<!--<audio src="music/lapso.mp3" preload="auto"></audio>  -->
+					</div>
+    				<div class="carousel-item">
+      					<img src="img/fotos/emperatriz.jpg" class="img-fluid media__img" alt="Ilustración de una mano">
+      					<!--<audio src="music/emperatriz.mp3" preload="auto"></audio>  -->
+ 				 	</div>
+  					
+  				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+    			<span class="carousel-control-prev-icon"></span>
+  				</a>
+  				<a class="carousel-control-next" href="#demo" data-slide="next">
+    			<span class="carousel-control-next-icon"></span>
+ 				</a>
+				</div>
 		</section>
 
 		<section
@@ -246,12 +216,12 @@
 		</section>
 
 		<section
-			class="contacto wow animate__animated animate__fadeIn container"
+			class="contacto container"
 			id="contacto"
 		>
 			<div class="row">
 				<div
-					class="embed-responsive embed-responsive-16by9 col-md-12 col-lg-9 d-none d-sm-block"
+					class="embed-responsive embed-responsive-16by9 col-md-12 col-lg-9 d-none d-sm-block wow animate__animated animate__fadeInLeft"
 				>
 					<iframe
 						class="embed-responsive-item"
@@ -261,7 +231,7 @@
 					></iframe>
 				</div>
 
-				<div class="col-md-12 col-lg-3">
+				<div class="col-md-12 col-lg-3  wow animate__animated animate__fadeInRight">
 					<form action="gracias.html" method="post">
 						<label for="nombre">Nombre:</label>
 						<input
@@ -290,37 +260,37 @@
 
 		<footer class="container-fluid">
 			<div class="rrss">
-				<i
-					class="fab fa-facebook-square" alt="Ícono Facebook"
-					style="color: RoyalBlue"
-				></i>
+				<a href="https://www.facebook.com/clvbnautico"><i
+					class="fab fa-facebook-square rrss__icon" alt="Ícono Facebook"
+					
+				></i></a>
 
 				<a href="https://www.instagram.com/clvbnautico/">
 					<i
-						class="fab fa-instagram" alt="Ícono Instragram"
-						style="color: MediumPurple"
+						class="fab fa-instagram rrss__icon" alt="Ícono Instragram"
+						
 					></i>
 				</a>
 				<a href="https://twitter.com/clvbnautico">
 					<i
-						class="fab fa-twitter" 
-						style="color: SteelBlue" alt="Ícono Twitter"
+						class="fab fa-twitter rrss__icon" 
+						 alt="Ícono Twitter"
 					></i>
 				</a>
 				<a
 					href="https://open.spotify.com/artist/147mj5LBBUQ74yq2YrnBXN?si=U4c7QVTuRli3_EdMuX-BYw"
 				>
 					<i
-						class="fab fa-spotify"
-						style="color: MediumSeaGreen" alt="Ícono Spotify"
+						class="fab fa-spotify rrss__icon"
+						 alt="Ícono Spotify"
 					></i>
 				</a>
 				<a
 					href="https://www.youtube.com/channel/UCKQcfmB6M0BO_joLxujEjWg"
 				>
 					<i
-						class="fab fa-youtube"
-						style="color: FireBrick" alt="Ícono Youtube"
+						class="fab fa-youtube rrss__icon"
+						 alt="Ícono Youtube"
 					></i>
 				</a>
 			</div>
