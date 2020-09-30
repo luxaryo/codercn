@@ -4,9 +4,13 @@
   justify-content: space-around;
   align-items: center;
 
-  img:hover{
+  img {
+  	border: 1px solid $gris;
+
+  	&:hover{
     transform: scaleX(-1);
     filter: invert(100%);
+  	}
   }
 }
 
