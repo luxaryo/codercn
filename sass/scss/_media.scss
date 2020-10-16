@@ -6,3 +6,10 @@
 	filter: invert(100%);
 }
 }
+
+.carousel-inner {
+	width: 70%; 
+	@media (max-width: 576px) {
+    width: 100%;
+	}
+  }

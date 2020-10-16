@@ -7,6 +7,7 @@
 
   input {
     background-color: $gris;
+    font-size: 0.8rem;
     color: #a4a4a4;
     padding: 3px;
     border: 1px solid #000;
@@ -21,13 +22,14 @@
     input[type="reset"] {
       width: 30%;
       display: inline;
-    }
+   
 
     input[type="button"]:hover,
     input[type="submit"]:hover,
     input[type="reset"]:hover {
         filter: invert(100%);
     }
+  }
 
   textarea {
     margin: 15px 0px;
@@ -36,6 +38,7 @@
     width: 100%;
     background-color: $gris;
     color: #a4a4a4;
+    font-size: 0.8rem;
     border: 1px solid #000;
     transition: 2s;
     border-radius: 0%;
