@@ -11,7 +11,23 @@ nav {
         display: flex;
         justify-content: space-around;
         width: 70%;
-}
+
+        li a, li {
+          font-size: 1.25rem;
+          font-family: "Frank Ruhl Libre", serif;
+          color: #ffffff;
+          text-decoration: none;
+          font-weight: 700;  
+          letter-spacing: 0.8px;
+          text-transform: uppercase;
+          @media (max-width: 576px) {
+          font-size: 1rem;
+          }
+          &:hover {
+            color: $suave;
+          }
+        }
+      }
 
     li {
         width: 100%;
@@ -19,21 +35,9 @@ nav {
         text-align: center;
 
 
-    &:hover {
+      &:hover {
         background-color: #000000;
-}}
-
-    ul li a, ul li {
-        font-size: 1.25rem;
-        font-family: "Frank Ruhl Libre", serif;
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: 700;  
-        letter-spacing: 0.8px;
-        text-transform: uppercase;
-        @media (max-width: 576px) {
-        font-size: 1rem;
-        }
+      }
     }
 }
 

@@ -1,4 +1,4 @@
-.contacto {
+.contact {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -20,16 +20,16 @@
     input[type="button"],
     input[type="submit"],
     input[type="reset"] {
-      width: 30%;
+      font-size: 1rem;
+      width: 40%;
       display: inline;
-   
 
-    input[type="button"]:hover,
-    input[type="submit"]:hover,
-    input[type="reset"]:hover {
+      input[type="button"]:hover,
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
         filter: invert(100%);
+      }
     }
-  }
 
   textarea {
     margin: 15px 0px;

@@ -13,7 +13,7 @@
     height: auto;
   }
 
-  .fechas__head {
+  .tour__head {
     font-size: 1.2rem;
     font-family: "Poppins", sans-serif;
     letter-spacing: 2px;
@@ -25,12 +25,12 @@
     border-bottom: 1px solid #ffffff;
   }
 
-  .fechas__contenido {
+  .tour__contenido {
     text-align: center;
     padding: 20px;
   }
 
-  .fechas__ayuda {
+  .tour__ayuda {
     text-align: justify;
     font-size: 0.8rem;
     padding: 0px 20px;
@@ -38,7 +38,7 @@
     grid-column-end: 4;
   }
 
-  .fechas strong {
+  .tour strong {
     color: $suave;
   }
 

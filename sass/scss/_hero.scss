@@ -3,7 +3,7 @@ header {
   min-height: 100%;
 }
 
-.portada {
+.hero {
   background-color: #000000;
   position: relative;
   background-color: black;
@@ -33,12 +33,12 @@ header {
     z-index: 2;
 }
 
-  .portada__musica {
+  .hero__musica {
     opacity: 0.5;
     z-index: 3;
 }
 
-  .portada__musica:hover {
+  .hero__musica:hover {
     opacity: 1;
 }
 
